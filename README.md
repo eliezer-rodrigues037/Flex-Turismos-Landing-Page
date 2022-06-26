@@ -7,6 +7,6 @@ Este projeto também possui algumas modificações pessoais de estilização, co
 
 ## To do:
 
--   [ ] Melhoria na responsividade para dispositivo móvel (WIP).
+-   [x] Melhoria na responsividade para dispositivo móvel.
 -   [ ] Dark mode.
 -   [ ] Git [icon](https://fontawesome.com/icons) com link para o repositório remoto.
