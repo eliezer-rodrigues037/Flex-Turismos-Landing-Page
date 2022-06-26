@@ -4,6 +4,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -29,18 +37,55 @@ div img {
 
 header {
     background-color: #122a57;
+    top: 0;
     height: 100px;
-    display: flex;
-    align-items: center;
-    color: white;
+    width: 100%;
+    position: fixed;
 }
 
-header .list-items {
+.navbar {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo a {
+    color: white;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.navbar .list-items {
     display: flex;
     max-width: 260px;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    margin-right: 10px;
+}
+
+.list-items li a {
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.list-items li a:before {
+    content: "";
+    background: #fff;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.3s;
+}
+
+.list-items li a:hover::before {
+    width: 100%;
 }
 
 .btn {
@@ -60,16 +105,9 @@ header .list-items {
     color: white;
 }
 
-.list-items li a {
-    color: white;
-}
-
-header .menu {
-    justify-content: space-between;
-}
-
 .apresentacao {
     height: 100vh;
+    margin-top: 100px;
     align-items: center;
     justify-content: space-around;
 }
@@ -286,9 +324,13 @@ footer {
         justify-content: space-around;
     }
 
-    .menu {
+    .navbar {
         flex-direction: column;
-        padding-left: 50px;
+        justify-content: space-evenly;
+    }
+
+    .brand-logo {
+        margin: 0;
     }
 
     .qs-itens {

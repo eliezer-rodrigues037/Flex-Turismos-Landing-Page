@@ -8,5 +8,6 @@ Este projeto também possui algumas modificações pessoais de estilização, co
 ## To do:
 
 -   [x] Melhoria na responsividade para dispositivo móvel.
+-   [x] Barra de navegação fixa.
 -   [ ] Dark mode.
 -   [ ] Git [icon](https://fontawesome.com/icons) com link para o repositório remoto.
